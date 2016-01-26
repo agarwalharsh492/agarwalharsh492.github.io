@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>To-Do List</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="container">
+		<section id="header">
+			<h1>todos</h1>
+			<div id="input">
+				<input type="checkbox" value="none" class="checkbox" id="mark_all"/>
+				<input type="text" placeholder="What needs to be done?" id="task_input" autofocus /> 
+			</div>
+		</section>
+		
+		<section id="content">
+		</section>
+		
+		<section id="footer" class="hidden">
+			
+			<ul>
+				<li id="tasksleft"><span id="n_tasks"></span></li>
+				<span id="states">
+					<li><button id="all_tasks" class="isActive">All</button></li>
+					<li><button id="active_tasks">Active</button></li>
+					<li><button id="comp_tasks">Completed</button></li>
+					<li><button id="clear_tasks" class="hidden">Clear Completed</button></li>
+				</span>
+			</ul>
+			
+		</section>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="model.js"></script>
+	<script type="text/javascript" src="view.js"></script>
+	<script type="text/javascript" src="controller.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

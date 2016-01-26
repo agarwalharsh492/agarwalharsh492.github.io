@@ -1,0 +1,15 @@
+# Site settings
+title: Harsh Agarwal
+email: agarwalharsh492@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Hi I'm Harsh Agarwal from Bangalore.<br>B.Tech. (C.S.E.) 2015 passout.<br>
+  My skills are HTML, CSS, Sass, JavaScript, JQuery.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+github_username: agarwalharsh492
+twitter_username: harshrx100 
+# Build settings
+markdown: kramdown
+
+collections:
+- projects

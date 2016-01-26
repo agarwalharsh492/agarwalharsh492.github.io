@@ -1,0 +1,48 @@
+html{
+	background-color: #e6e6e6;
+}
+.container{
+    margin: 25px auto;
+	height: 310px;
+	overflow: hidden;
+	-webkit-box-shadow: 0px 0px 36px 1px rgba(138,150,186,1);
+    -moz-box-shadow: 0px 0px 36px 1px rgba(138,150,186,1);
+    box-shadow: 0px 0px 36px 1px rgba(138,150,186,1);
+    border-radius: 6px;
+}
+#first,#second,#third{
+	height: 400px;
+    margin: 70px 0;
+    padding: 30px;
+}
+#one{
+	width: 220px;
+}
+#two{
+	width: 440px;
+}
+#three{
+	width: 660px;
+}
+.next_prev{
+	background-color: #0078e7;
+    border: 0;
+    color: white;
+    font-size: 100%;
+    padding: 0.5em 0.5em;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+}
+.slider{
+	margin:0;
+	list-style: none;
+	width: 2000px;
+	padding: 0;
+}
+.slider li{
+	float: left;
+}
+.nav{
+	text-align: center;
+}

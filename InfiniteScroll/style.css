@@ -1,0 +1,42 @@
+body{
+	margin:0;
+}
+body *{
+	box-sizing:border-box;
+}
+#container{
+	margin:auto;
+	width:800px;
+	margin:auto;
+	height:600px;
+}
+#Bangalore,#Jaipur{
+	width:330px;
+	height:400px;
+	background-color:rgb(255, 255, 255);
+	text-align: center;
+	overflow-y:auto;
+	overflow-x:hidden; 
+	margin-top: 100px;
+	border: 1px solid #c3c3c3; 
+}
+#Bangalore{
+	float:left;
+}
+#Jaipur{
+	float:right;
+}
+.weather-data{
+	position: relative;
+	width: 100%;
+	height:100px;
+	background-color: #F5F5F5;
+    border-top: 1px solid #c3c3c3;
+
+}
+.weather-data p{
+	 bottom: 0;
+    left: 40px;
+    position: absolute;
+    font-size: 1.1em;
+}
