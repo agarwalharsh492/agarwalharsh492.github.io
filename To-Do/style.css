@@ -36,34 +36,8 @@ input[type=checkbox] {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     margin-top: 15px;
     outline: none;
-}
-.mark_com{
-	margin-left: 10px;
-}
-.mark_com::after {
-    content: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAxNCAxNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTQgMTQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnIGlkPSJYTUxJRF80OTZfIj4NCgk8cGF0aCBpZD0iWE1MSURfMTNfIiBzdHlsZT0iZmlsbDojQkJCQkJCOyIgZD0iTTEzLDF2MTJIMVYxSDEzIE0xNCwwSDB2MTRoMTRWMEwxNCwweiIvPg0KPC9nPg0KPC9zdmc+DQo=');
-}
-.mark_com:checked::after {
-    content: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAxNCAxNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTQgMTQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnIGlkPSJYTUxJRF8xXyI+DQoJPHBvbHlnb24gaWQ9IlhNTElEXzUyOV8iIHBvaW50cz0iNS40LDExLjUgMS45LDggMi44LDcuMSA1LjQsOS44IDExLjcsMy41IDEyLjUsNC4zIAkiLz4NCgk8ZyBpZD0iWE1MSURfNDk3XyI+DQoJCTxwYXRoIGlkPSJYTUxJRF8xNF8iIHN0eWxlPSJmaWxsOiNCQkJCQkI7IiBkPSJNMTMsMXYxMkgxVjFIMTMgTTE0LDBIMHYxNGgxNFYwTDE0LDB6Ii8+DQoJPC9nPg0KPC9nPg0KPC9zdmc+DQo=");
-}
-input#mark_all {
-    transform: rotate(90deg);
-    margin-top: 15px;
-    margin-left: 18px;
-}
-input#mark_all::after {
-    content: "❯";
-    font-size: 22px;
-    color: rgb(230, 230, 230);
-    padding: 0px 3px;
-}
-#mark_all:checked::after {
-    color: #737373;
 }
 input[type=text]{
 	font-size: 1.5em;
@@ -142,4 +116,33 @@ button{
 }
 .isActive{
 	text-decoration: underline;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0){
+    input[type="checkbox"]{
+        appearance: none;
+        -webkit-appearance: none;
+    }
+    .mark_com{
+        margin-left: 10px;
+    }
+    .mark_com::after {
+        content: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAxNCAxNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTQgMTQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnIGlkPSJYTUxJRF80OTZfIj4NCgk8cGF0aCBpZD0iWE1MSURfMTNfIiBzdHlsZT0iZmlsbDojQkJCQkJCOyIgZD0iTTEzLDF2MTJIMVYxSDEzIE0xNCwwSDB2MTRoMTRWMEwxNCwweiIvPg0KPC9nPg0KPC9zdmc+DQo=');
+    }
+    .mark_com:checked::after {
+        content: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAxNCAxNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTQgMTQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnIGlkPSJYTUxJRF8xXyI+DQoJPHBvbHlnb24gaWQ9IlhNTElEXzUyOV8iIHBvaW50cz0iNS40LDExLjUgMS45LDggMi44LDcuMSA1LjQsOS44IDExLjcsMy41IDEyLjUsNC4zIAkiLz4NCgk8ZyBpZD0iWE1MSURfNDk3XyI+DQoJCTxwYXRoIGlkPSJYTUxJRF8xNF8iIHN0eWxlPSJmaWxsOiNCQkJCQkI7IiBkPSJNMTMsMXYxMkgxVjFIMTMgTTE0LDBIMHYxNGgxNFYwTDE0LDB6Ii8+DQoJPC9nPg0KPC9nPg0KPC9zdmc+DQo=");
+    }
+    input#mark_all {
+        transform: rotate(90deg);
+        margin-top: 15px;
+        margin-left: 18px;
+    }
+    input#mark_all::after {
+        content: "❯";
+        font-size: 22px;
+        color: rgb(230, 230, 230);
+        padding: 0px 3px;
+    }
+    #mark_all:checked::after {
+        color: #737373;
+    }
 }
